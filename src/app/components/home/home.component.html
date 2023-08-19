@@ -1,0 +1,26 @@
+<h1>Cars</h1>
+<p><a class="button" href="new_book.html">Create New Cars</a></p>
+<table>
+  <thead>
+  <tr>
+   <th>Owner</th>
+    <th>Brand</th>
+    <th>Make</th>
+    <th>Color</th>
+    <th>Year</th>
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr *ngFor="let car of cars">
+    <td>
+      <a>{{car.owner}}</a>
+    </td>
+    <td>{{car.brand}}</td>
+    <td>{{car.make}}</td>
+    <td>{{car.color}}</td>
+    <td>{{car.year}}</td>
+  </tr>
+
+  </tbody>
+</table>
